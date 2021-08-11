@@ -1,9 +1,9 @@
 // Ping Module
 module.exports = {
     // Name of Command
-    name: 'ping',
+    name: 'hello',
     // Description of Command
-    description: 'Ping!',
+    description: 'hello!',
     // Guild - TRUE
     guildOnly: true,
     // Cooldown
@@ -11,6 +11,6 @@ module.exports = {
     // Execute Command - Parameters: message
     execute(message) {
         // Send Message
-        message.channel.send('Pong!');
+        message.channel.send('Hello! Welcome to StudyTime! Start your study session right away!');
     },
 };

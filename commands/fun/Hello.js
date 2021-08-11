@@ -1,9 +1,9 @@
 // Beep Module
 module.exports = {
     // Name of Command
-    name: 'beep',
+    name: 'Hello',
     // Description of Command
-    description: 'Beep!',
+    description: 'Hello!',
     // Guild - TRUE
     guildOnly: true,
     // Cooldown
@@ -11,7 +11,7 @@ module.exports = {
     // Execute Command - Parameters: message
     execute(message) {
         // Send Message
-        message.channel.send('Boop.').then(sentMessage => {
+        message.channel.send('Hello! Welcome to StudyTime! Start your study session right away!').then(sentMessage => {
             // Add Reaction
             sentMessage.react('👍');
         });

@@ -17,3 +17,19 @@ header {
 h3 {
   color: #8546b5;
 }
+
+body {
+  color: rgb(206, 206, 206);
+}
+h1 {
+  color: rgba(119, 23, 128, 0.788) 
+}
+header {
+  border: 2px solid rgb(23, 27, 51);
+}
+
+h2 {
+  color:rgba(255, 179, 128, 0.788)
+}
+
+.container-fluid {background-color: rgb(23, 27, 51);}

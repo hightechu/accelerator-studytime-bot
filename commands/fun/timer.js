@@ -55,6 +55,14 @@ module.exports = {
     args: true,
   // Execute Command - Parameters: message
   execute(message, args) {
+    const embed = new Discord.MessageEmbed() // Ver 12.2.0 of Discord.js
+  .setTitle("The Crow and the Pitcher")
+  .setDescription("Save the crow!")
+  .setTimestamp()
+  .setFooter("StudyTime")
+  .setAuthor("StudyTime")
+  .setImage("https://cdn.discordapp.com/attachments/875437578688548907/875857748963753994/image0.gif")
+  message.channel.send(embed);
     process_message(message)
   }
 }
@@ -275,3 +283,4 @@ function process_message(msg){
     }catch(e){}
   }
   };
+

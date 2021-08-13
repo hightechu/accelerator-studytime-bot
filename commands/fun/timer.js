@@ -1,4 +1,3 @@
-const dotenv = require('dotenv').config();
 const Discord = require('discord.js');
 
 const HOURS_TO_MILLISECONDS = 3600000;

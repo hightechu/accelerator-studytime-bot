@@ -14,7 +14,7 @@ module.exports = {
         // Create Embed
         const embed = new Discord.MessageEmbed()
             .addFields(
-            { name: 'Please start your timer!', value: '!timer [hh-dd-ss]', inline: true },
+            { name: 'Please start your timer!', value: '!timer [hh-mm-ss]', inline: true },
             );
         // Send Message
         message.channel.send(embed);

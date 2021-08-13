@@ -39,8 +39,6 @@ const AlarmHelp = `**Usage:**
 > Alarm finished in 0 hours, 0 minutes and 19.41 seconds. Alarm finished time is 10/4/2020, 10:34:39 PM (Eastern Daylight Time)`;
 
 // Config parser
-let config;
-config = dotenv.parsed;
 
 const client = new Discord.Client();
 

@@ -38,7 +38,6 @@ const AlarmHelp = `**Usage:**
 > Alarm set for 10/4/2020, 10:34:39 PM (Eastern Daylight Time)
 > Alarm finished in 0 hours, 0 minutes and 19.41 seconds. Alarm finished time is 10/4/2020, 10:34:39 PM (Eastern Daylight Time)`;
 
-// Config parser
 
 const client = new Discord.Client();
 
@@ -55,7 +54,9 @@ module.exports = {
     // Arguments TRUE
     args: true,
   // Execute Command - Parameters: message
-  execute(message, args) {}
+  execute(message, args) {
+    process_message(message)
+  }
 }
 
 /**
@@ -97,7 +98,7 @@ client.on('ready', () => {
  * Takes a date string from chat and returns an alarm notification
  * @see `!alarm --help`
  */
-client.on('message', msg => {
+function process_message(msg){
   // !timer handler
   if (msg.content.substring(0,6) === '!timer') {
     if (msg.content.indexOf('--help') !== -1) {
@@ -105,6 +106,7 @@ client.on('message', msg => {
       return msg.reply(helpReply);
     }
     let msgPieces = msg.content.split(' ');
+    console.log(msgPieces)
     let end,
         rawEnd,
         seconds,
@@ -132,12 +134,14 @@ client.on('message', msg => {
       }
       rawEnd = msgPieces[1];
       // Split arg entities
-      let tmpEnd = rawEnd.split(':');
+      let tmpEnd = rawEnd.split('-');
+      console.log(tmpEnd[0],tmpEnd[1]);
       switch (tmpEnd.length) {
         case 1:
           hours = 0;
           minutes = 0;
           seconds = parseInt(tmpEnd[0]);
+          console.log(seconds);
           break;
         case 2:
           hours = 0;
@@ -148,6 +152,7 @@ client.on('message', msg => {
           hours = parseInt(tmpEnd[0]);
           minutes = parseInt(tmpEnd[1]);
           seconds = parseInt(tmpEnd[2]);
+          console.log(hours, minutes, seconds);
           break;
         case 4:
           let days = parseInt(tmpEnd[0]);
@@ -269,4 +274,4 @@ client.on('message', msg => {
       
     }catch(e){}
   }
-  });
+  };

@@ -1,6 +1,5 @@
 const dotenv = require('dotenv').config();
 const Discord = require('discord.js');
-const Timezones = require('./timezones');
 
 const HOURS_TO_MILLISECONDS = 3600000;
 const MINUTES_TO_MILLISECONDS = 60000;
@@ -52,15 +51,18 @@ const client = new Discord.Client();
 
 module.exports = {
   // Name of Command
-  name: 'study-session',
+  name: 'timer',
   // Description of Command
-  description: 'studysession',
+  description: 'timer',
   // Guild - TRUE
   guildOnly: true,
   // Cooldown
   cooldown: 50,
+  usage: '[hh-mm-ss]',
+    // Arguments TRUE
+    args: true,
   // Execute Command - Parameters: message
-  execute(message) {}
+  execute(message, args) {}
 }
 
 /**
@@ -275,5 +277,3 @@ client.on('message', msg => {
     }catch(e){}
   }
   });
-
-client.login(config.DISCORD_TOKEN);

@@ -14,9 +14,7 @@ module.exports = {
         // Create Embed
         const embed = new Discord.MessageEmbed()
             .addFields(
-            { name: 'Please specify your study and break time', value: ':)', inline: true },
-            { name: 'Please specify your study session duration', value: '!minstudy_ ', inline: true },
-            { name: 'How many 10-minute breaks would you like to have?', value: '!breaks_', inline: true }
+            { name: 'Please start your timer!', value: '!timer [hh-mm-ss]', inline: true },
             );
         // Send Message
         message.channel.send(embed);

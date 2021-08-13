@@ -60,7 +60,8 @@ module.exports = {
   // Cooldown
   cooldown: 50,
   // Execute Command - Parameters: message
-  execute(message) {
+  execute(message) {}
+}
 
 /**
  * Takes a calculation in seconds and converts it to an object 
@@ -271,7 +272,8 @@ client.on('message', msg => {
       }
 
       
-    }
-  };}
+    }catch(e){}
   }
+  });
+
 client.login(config.DISCORD_TOKEN);

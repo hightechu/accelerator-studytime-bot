@@ -40,11 +40,7 @@ const AlarmHelp = `**Usage:**
 
 // Config parser
 let config;
-if (dotenv.error) {
-  throw dotenv.error
-} else {
-  config = dotenv.parsed;
-}
+config = dotenv.parsed;
 
 const client = new Discord.Client();
 

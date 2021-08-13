@@ -22,11 +22,12 @@ body, html {
   color: rgb(206, 206, 206);
   font-family: times;
 }
+
 h1 {
-  color: rgba(119, 23, 128, 0.788)
+  color: rgba(119, 23, 128, 0.788);
 }
 header {
-  border: 2px solid rgb(23, 27, 51);
+  border: 2px solid rgb(28, 33, 61);
 }
 
 h2 {
@@ -34,21 +35,21 @@ h2 {
 }
 
 .container-fluid, body, html {
-  background-color: rgb(23, 27, 51);
+  background-color: rgb(43, 50, 94);
 }
 .center-text {
   text-align: center;
 }
 
 .pads {
-  padding-left: 10rem;
-  padding-right: 10rem;
+  padding-left: 15rem;
+  padding-right: 15rem;
 }
 .navbar .navbar-expand-md .navbar-light, header {
-  background-color: red;
+  background-color:rgb(37, 42, 80);
 }
 a.new-color {
-  color: red !important;
+  color:rgb(206, 206, 206) !important;
   padding-left: 1rem;
   padding-right: 1rem;
   text-decoration: none;
@@ -56,3 +57,17 @@ a.new-color {
 a.new-color:hover {
   opacity: 0.8;
 }
+
+a:link {
+  color: rgb(175, 204, 236);
+}
+a:visited {
+  color:rgb(175, 204, 236);
+}
+a:hover {
+  color:rgb(124, 181, 241);
+}
+
+
+
+

@@ -1,22 +1,22 @@
-![HighTechU Discord Bot](./docs/images/hightechu-discord-bot-banner.png)
+![image](https://user-images.githubusercontent.com/26526271/137644153-7da41a4d-e75b-40f1-b853-34fe0d20b0b4.png)
 
 ## About
 
-The purpose of our discord bot is to assist students and teenagers with independent studying. No need to worry about extensive instructions and commands. Our near-linear user flow will allow for a simple and refreshing experience. Our screen use limiting feature is all-new and innovative, featuring one of the best known fables of Aesop, "The Crow and the Pitcher".
-
-For more information about the commands visit the "[documentation](https://hightechu.github.io/accelerator-studytime-bot/docs)".
+For more information about StudyTime bot commands visit the [documentation](https://hightechu.github.io/accelerator-studytime-bot/docs).
 
 ## Screenshots
 
-![Bot Command Demo](./docs/images/demo.png)
+![image](https://user-images.githubusercontent.com/26526271/137644097-5ab0b3c0-7fb8-4767-9366-5fe045113140.png)
 
 ## Technologies
 
 The HighTechU Discord Bot uses the following technologies: Discord.js, Node.js, Firebase, Heroku, Bootstrap, and GitHub Pages.
 
+
 ## License
 
 The project uses the [MIT LICENSE](https://choosealicense.com/licenses/mit/).
+
 
 ## Authors
 
